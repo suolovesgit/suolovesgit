@@ -1,0 +1,25 @@
+<svg width="1280" height="92" viewBox="0 0 1280 92" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Neon divider">
+  <defs>
+    <linearGradient id="line" x1="120" y1="46" x2="1160" y2="46" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#31F7FF" stop-opacity="0"/>
+      <stop offset="0.18" stop-color="#31F7FF"/>
+      <stop offset="0.5" stop-color="#FF4FD8"/>
+      <stop offset="0.82" stop-color="#F8D64E"/>
+      <stop offset="1" stop-color="#F8D64E" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="78" y="21" width="1124" height="50" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#31F7FF" flood-opacity="0.5"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="11" flood-color="#FF4FD8" flood-opacity="0.28"/>
+    </filter>
+    <style>
+      .dot { animation: blink 2.4s ease-in-out infinite; }
+      .dot:nth-of-type(2) { animation-delay: .28s; }
+      .dot:nth-of-type(3) { animation-delay: .56s; }
+      @keyframes blink { 0%, 100% { opacity: .35; } 50% { opacity: 1; } }
+    </style>
+  </defs>
+  <path d="M110 46H1170" stroke="url(#line)" stroke-width="3" stroke-linecap="round" filter="url(#glow)"/>
+  <circle class="dot" cx="598" cy="46" r="5" fill="#31F7FF"/>
+  <circle class="dot" cx="640" cy="46" r="5" fill="#FF4FD8"/>
+  <circle class="dot" cx="682" cy="46" r="5" fill="#F8D64E"/>
+</svg>
