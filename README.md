@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/linux-terminal.svg" width="100%" alt="Animated Linux terminal printing suolovesgit" />
+  <img src="./assets/terminal.svg" width="100%" alt="Linux terminal printing suolovesgit" />
 </p>
 
 <p align="center">
