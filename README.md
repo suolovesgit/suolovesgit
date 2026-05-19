@@ -21,6 +21,10 @@
 </p>
 
 <p align="center">
+  <img src="./assets/linux-terminal.svg" width="100%" alt="Animated Linux terminal printing suolovesgit" />
+</p>
+
+<p align="center">
   <img src="./assets/style-grid.svg" width="100%" alt="Low info high style flex tiles" />
 </p>
 

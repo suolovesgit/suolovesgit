@@ -1,0 +1,99 @@
+<svg width="1280" height="500" viewBox="0 0 1280 500" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Animated Linux terminal</title>
+  <desc id="desc">A clean Linux terminal waits five seconds, types a sudo while true command, then prints suolovesgit repeatedly.</desc>
+  <defs>
+    <linearGradient id="frame" x1="52" y1="44" x2="1228" y2="456" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#151B26"/>
+      <stop offset="0.55" stop-color="#080C12"/>
+      <stop offset="1" stop-color="#101614"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="64" y1="54" x2="1216" y2="446" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#31F7FF"/>
+      <stop offset="0.45" stop-color="#D7E1EA"/>
+      <stop offset="1" stop-color="#96FF6B"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="82" y1="96" x2="1198" y2="430" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#05080B"/>
+      <stop offset="1" stop-color="#07110E"/>
+    </linearGradient>
+    <filter id="shadow" x="20" y="12" width="1240" height="476" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#000000" flood-opacity="0.48"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#31F7FF" flood-opacity="0.12"/>
+    </filter>
+    <clipPath id="screenClip">
+      <rect x="82" y="104" width="1116" height="326" rx="14"/>
+    </clipPath>
+    <clipPath id="typingClip">
+      <rect x="410" y="129" width="0" height="31">
+        <animate attributeName="width" begin="5s" dur="3.35s" values="0;760" calcMode="spline" keySplines="0.22 1 0.36 1" fill="freeze"/>
+      </rect>
+    </clipPath>
+    <style>
+      .mono { font-family: "JetBrains Mono", "Cascadia Mono", "SFMono-Regular", Consolas, monospace; }
+      .dim { fill: #748194; }
+      .green { fill: #96ff6b; }
+      .cyan { fill: #72f7ff; }
+      .white { fill: #edf6ff; }
+      .line { font-size: 23px; font-weight: 700; }
+      .output { font-size: 24px; font-weight: 800; letter-spacing: 0; }
+    </style>
+  </defs>
+
+  <rect width="1280" height="500" rx="34" fill="#05070D"/>
+  <path d="M0 450C170 384 274 492 452 431C635 369 778 388 943 432C1097 473 1192 421 1280 382V500H0V450Z" fill="#0C1617"/>
+  <path d="M0 64C138 25 246 50 390 74C574 105 724 46 884 34C1054 21 1187 47 1280 78V0H0V64Z" fill="#101523"/>
+
+  <g filter="url(#shadow)">
+    <rect x="52" y="44" width="1176" height="412" rx="26" fill="url(#frame)" stroke="url(#rim)" stroke-width="2"/>
+    <rect x="52" y="44" width="1176" height="50" rx="26" fill="#171D28"/>
+    <path d="M52 70C52 55.641 63.641 44 78 44H1202C1216.36 44 1228 55.641 1228 70V94H52V70Z" fill="#171D28"/>
+
+    <circle cx="86" cy="69" r="8" fill="#FF5F57"/>
+    <circle cx="112" cy="69" r="8" fill="#FFBD2E"/>
+    <circle cx="138" cy="69" r="8" fill="#28C840"/>
+    <text x="640" y="76" class="mono dim" text-anchor="middle" font-size="16" font-weight="750">bash - suolovesgit@linux:~</text>
+
+    <rect x="82" y="104" width="1116" height="326" rx="14" fill="url(#screen)" stroke="#242E3D"/>
+    <g clip-path="url(#screenClip)">
+      <path d="M82 153H1198M82 205H1198M82 257H1198M82 309H1198M82 361H1198M82 413H1198" stroke="#132018" stroke-width="1"/>
+      <text x="106" y="151" class="mono line">
+        <tspan class="green">suolovesgit@linux</tspan><tspan class="white">:</tspan><tspan class="cyan">~</tspan><tspan class="white">$</tspan>
+      </text>
+      <text x="410" y="151" class="mono line white" clip-path="url(#typingClip)">sudo bash -c 'while true; do echo suolovesgit; done'</text>
+      <rect x="410" y="131" width="12" height="26" rx="2" fill="#D7FFE8" opacity="0">
+        <animate attributeName="opacity" begin="5s" dur="0.01s" from="0" to="1" fill="freeze"/>
+        <animate attributeName="x" begin="5s" dur="3.35s" values="410;1168" calcMode="spline" keySplines="0.22 1 0.36 1" fill="freeze"/>
+        <animate attributeName="opacity" begin="8.45s" dur="0.18s" from="1" to="0" fill="freeze"/>
+      </rect>
+
+      <g opacity="0">
+        <animate attributeName="opacity" begin="8.7s" dur="0.2s" from="0" to="1" fill="freeze"/>
+        <g>
+          <animateTransform attributeName="transform" type="translate" begin="8.7s" dur="3.2s" values="0 0;0 -208" repeatCount="indefinite"/>
+          <g>
+            <text x="106" y="203" class="mono output green">suolovesgit</text>
+            <text x="106" y="229" class="mono output green">suolovesgit</text>
+            <text x="106" y="255" class="mono output green">suolovesgit</text>
+            <text x="106" y="281" class="mono output green">suolovesgit</text>
+            <text x="106" y="307" class="mono output green">suolovesgit</text>
+            <text x="106" y="333" class="mono output green">suolovesgit</text>
+            <text x="106" y="359" class="mono output green">suolovesgit</text>
+            <text x="106" y="385" class="mono output green">suolovesgit</text>
+            <text x="106" y="411" class="mono output green">suolovesgit</text>
+          </g>
+          <g transform="translate(0 208)">
+            <text x="106" y="203" class="mono output green">suolovesgit</text>
+            <text x="106" y="229" class="mono output green">suolovesgit</text>
+            <text x="106" y="255" class="mono output green">suolovesgit</text>
+            <text x="106" y="281" class="mono output green">suolovesgit</text>
+            <text x="106" y="307" class="mono output green">suolovesgit</text>
+            <text x="106" y="333" class="mono output green">suolovesgit</text>
+            <text x="106" y="359" class="mono output green">suolovesgit</text>
+            <text x="106" y="385" class="mono output green">suolovesgit</text>
+            <text x="106" y="411" class="mono output green">suolovesgit</text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
